@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Letter</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f8e1e1;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+        }
+
+        .letter {
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            width: 400px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .letter:hover {
+            transform: scale(1.05);
+        }
+
+        .heart {
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 50px;
+            color: red;
+            animation: bounce 1s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        h1 {
+            color: #e63946;
+            margin: 0;
+        }
+
+        p {
+            color: #333;
+            line-height: 1.5;
+        }
+
+        .signature {
+            margin-top: 20px;
+            font-style: italic;
+            color: #e63946;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="letter">
+        <div class="heart">❤️</div>
+        <h1>My Dearest</h1>
+        <p>
+            I just wanted to take a moment to express how much you mean to me. 
+            Your smile lights up my day, and your laughter is music to my ears. 
+            Every moment spent with you is a treasure I hold dear.
+        </p>
+        <p>
+            I admire your kindness, your strength, and the way you see the world. 
+            You inspire me to be a better person, and I am so grateful to have you in my life.
+        </p>
+        <p>
+            I hope we can create many more beautiful memories together. 
+            You have my heart, now and always.
+        </p>
+        <p class="signature">Yours Forever,</p>
+        <p class="signature">[KANJI]</p>
+    </div>
+
+</body>
+</html>
